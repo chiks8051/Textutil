@@ -1,0 +1,1 @@
+Text Area code {/*style={{color: props.mode==='light'?'black':'white',background: props.mode==='dark'?'#0099cc':'white'}}*/}
