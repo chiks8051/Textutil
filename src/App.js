@@ -35,25 +35,15 @@ export default function App() {
       showAlert('light Mode has been enabled','success');
     }
   }
-  const toggleModeRed = () =>{
-    if(mode === 'light'){
-      setMode('red');
-      document.body.style.background = '#FF0000';
-      showAlert('Red Dark Mode has been enabled','success');
-    }else{
-      setMode('light');
-      document.body.style.background = 'white';
-      showAlert('light Mode has been enabled','success');
-    }
-  }
+
 
   return (
     <>
       {/* <BrowserRouter> */}
-        <Navbar title="TextUtils" aboutText="About TextUtils" mode={mode} toggleModeBlue={toggleModeBlue} toggleModeRed={toggleModeRed}/>
+        <Navbar title="TextUtils" aboutText="About TextUtils" mode={mode} toggleModeBlue={toggleModeBlue}/>
         <Alert alert={alert} />
         <div className='container my-3'>
-        <TextForm heading = "enter your TEXT to analyze" mode={mode} showAlert={showAlert}/>
+        <TextForm heading = "Try TextUtil to modify your text" mode={mode} showAlert={showAlert}/>
         {/* <Routes> */}
           {/* <Route path='/about' element={<About/>} /> */}
           {/* <Route path='/' element={<TextForm heading = "enter your TEXT to analyze" mode={mode} showAlert={showAlert}/>} /> */}
